@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemons Page</title>
+</head>
+<body>
+
+  
+  <header>
+    <nav>
+      <div class="logo">Ezekiel Mensah </div>
+        <a href="about.html">About</a>
+       
+    </nav>
+  </header>
+<!-- welcome message -->
+  <div id="welcome">
+    <h1>Welcome to the Pokédex!</h1>
+    <p>The Pokédex contains detailed stats for every creature from the Pokemon games.</p>
+    <input id="searchInput" type="text" placeholder="Search Pokémon">
+  </div>
+
+  <main id="pokemon-List" class="grid-container">
+    <!-- Pokémon cards is displayed here -->
+  </main>
+  <div id="pagination">
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+  </div>
+
+  <div id="Details" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2 id="pokemonName"></h2>
+      <p><strong>Species:</strong> <span id="species"></span></p>
+      <p><strong>Base Stats:</strong></p>
+      <ul id="Stats-pokemons"></ul>
+      <p><strong>Types:</strong> <span id="type"></span></p>
+      <p><strong>Weight:</strong> <span id="weight"></span></p>
+      <p><strong>Moves:</strong></p>
+      <ul id="moves"></ul>
+    </div>
+  </div>
+
+  
+  <script src="app.js" defer></script>
+</body>
+</html>
